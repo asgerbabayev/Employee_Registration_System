@@ -9,6 +9,14 @@ public class AppDbContext : DbContext
     public DbSet<Employee> Employees => Set<Employee>();
     public DbSet<Department> Departments => Set<Department>();
 
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Employee>()
+            .HasOne(x => x.Department)
+            .WithMany(x => x.Employees)
+            .HasForeignKey(x => x.DepartmentId);
+    }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.AddInterceptors(_baseEntitySaveChangesInterceptor);

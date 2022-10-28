@@ -1,0 +1,11 @@
+﻿global using Registration_System.Business.Abstract;
+global using Registration_System.DataAccess.Repositories.Abstract;
+global using Registration_System.Core.Utilities.Results;
+global using Registration_System.Entities.DTO_s.EmployeeDtos;
+global using Registration_System.Entities.DTO_s.DepartmentDtos;
+global using AutoMapper;
+global using Registration_System.Business.Constants;
+global using Registration_System.Entities.Concrete;
+global using Microsoft.Extensions.DependencyInjection;
+global using Registration_System.Business.Concrete;
+global using FluentValidation;

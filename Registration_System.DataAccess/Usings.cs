@@ -1,0 +1,13 @@
+﻿global using Registration_System.Entities.Concrete.Base;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.ChangeTracking;
+global using System.Linq.Expressions;
+global using Registration_System.Entities.Concrete;
+global using Registration_System.DataAccess.DataContext;
+global using Registration_System.DataAccess.Repositories.Abstract;
+global using Registration_System.DataAccess.Repositories.Base;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Registration_System.DataAccess.Repositories.Concrete;
+global using Microsoft.EntityFrameworkCore.Diagnostics;
+global using Registration_System.DataAccess.Interceptors;

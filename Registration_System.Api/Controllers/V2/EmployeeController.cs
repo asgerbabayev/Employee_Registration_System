@@ -1,13 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using NLog;
 using Registration_System.Business.Abstract;
 using Registration_System.Entities.DTO_s.EmployeeDtos;
 
-namespace Registration_System.Api.Controllers
+namespace Registration_System.Api.Controllers.V2
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class EmployeeController : ControllerBase
+    [ApiVersion("2.0")]
+    public class EmployeeController : ApiBaseController
     {
         private readonly IEmployeeService _employeeService;
 

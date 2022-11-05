@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text.Json.Serialization;
+﻿using System.Text.Json.Serialization;
 
 namespace Registration_System.Entities.DTO_s.DepartmentDtos;
 public class DepartmentListDto

@@ -2,11 +2,10 @@
 using Registration_System.Business.Abstract;
 using Registration_System.Entities.DTO_s.DepartmentDtos;
 
-namespace Registration_System.Api.Controllers
+namespace Registration_System.Api.Controllers.V1
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class DepartmentController : ControllerBase
+    [ApiVersion("1.0")]
+    public class DepartmentController : ApiBaseController
     {
         private readonly IDepartmentService _departmentService;
 
